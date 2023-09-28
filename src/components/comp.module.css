@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
+
+.cardbox{
+    color: white;
+    height: 300px;
+    width: 600px;
+ 
+    margin: auto;
+    
+    perspective: 10000px;
+}
+.card_wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 100px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.cardbox:hover  .card_wrapper{
+    transform: rotateY(180deg);
+
+}
+.card_front,.card_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    background-color: #2a2a2a;
+    border: 2px solid black;
+    font-family: 'Skranji', cursive;
+}
+.card_front{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.card_front_bank{
+    width:100%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.bank{
+    height: 100%;
+    width: 20%;
+    padding-top: 20px;
+}
+.card_front_logo{
+    width:100%;
+    height: 25%;
+    
+}
+.card_front_number{
+    width:100%;
+    height: 25%;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.pair{
+    height: 50%;
+    width: 15%;
+
+    margin-top: 16px;
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+.card_front_personal{
+    width:100%;
+    height: 25%;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    padding-left: 15px;
+    height: 50%;
+    width: 40%;
+    
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform:uppercase;
+}
+.expiry{
+    height: 50%;
+    width: 30%;
+    
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.card_back{
+   
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+}
+.empty1{
+    width: 100%;
+    height: 15%;
+}
+.black{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+.empty2{
+    width: 100%;
+    height: 5%;
+}
+.white{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.cvv{
+    width: 20%;
+    height: 100%;
+    color: black;
+    font-weight: 700;
+    padding-top: 8px;
+    font-size: 20px;
+}
+.empty3{
+    width: 100%;
+    height: 30%;
+}
+.end_back{
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+.footer{
+    height: 100px;
+    width: 100%;
+}
+
+.form{
+    height: 500px;
+    width: 700px;
+ 
+    
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+
+    border: 2px solid black;
+    
+}
+input{
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(205, 205, 205);
+}
+input::placeholder{
+    color: rgb(206, 206, 206);
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+.form_wrapper{
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+}
+.formlabel{
+    padding-top: 20px;
+}
+.dabbe1{
+    width: 100%;
+    height: 15%;
+    
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+
+
+}
+.dabbe2{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.numberinput{
+    width: 20%;
+    height: 50%;
+   
+    margin-top: 15px;
+    text-align: center;
+}
+.nameinput{
+    width: 99%;
+    height: 50%;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+
+
+.dabbe4{
+    width: 100%;
+    height: 15%;
+   
+}
+
+.dabbe6{
+    width: 100%;
+    height: 15%;
+    
+
+}
